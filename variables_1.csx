@@ -137,24 +137,22 @@ Console.WriteLine(sum);
 
 List<string> words = new List<string>() { "Kayak", "Ship", "Level", "Banana" };
 List<string> palindromes = new List<string>();
-List<char> temp1 = new List<char>();
-List<char> temp2 = new List<char>();
 
 foreach (string word in words)
 {
-    for (int i = 0; i < word.Length; i++)
+    bool isPalindrome = true;
+    for (int i = 0; i < word.Length / 2; i++)
     {
-        temp1.Add(word[i]);
-        for (int j = word.Length; j > 0; j--)
+        if (word[i] != word[word.Length - 1 - i])
         {
-            temp2.Add(word[j]);
-            if (temp1 == temp2)
-            {
-                palindromes.Add(word);
-            }
+            isPalindrome = false;
+            break;
         }
+    }
+    if (isPalindrome)
+    {
+        palindromes.Add(word);
     }
 }
 
-string palindromesJoin = string.Join(" ", palindromes);
-Console.WriteLine(palindromesJoin);
+Console.WriteLine(string.Join(", ", palindromes));

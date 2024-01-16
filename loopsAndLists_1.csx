@@ -71,8 +71,6 @@ Console.WriteLine(string.Join(", ", combinedArray));
 */
 
 
-
-
 /*  Task 4
     Given the following array of digits, create an array of the numbers missing from the sequence.
     Again using loops and not built in functionality. 

@@ -8,7 +8,18 @@
     Do not use any built in functionality.
 */
 
-
+int returnLargestNumber(int[] numbers)
+{
+    int largestNumber = numbers[0];
+    for (int i = 1; i < numbers.Length; i++)
+    {
+        if (numbers[i] > largestNumber)
+        {
+            largestNumber = numbers[i];
+        }
+    }
+    return largestNumber;
+}
 
 /*  Task 2
     Create a function that returns an array of n posetive integers, where n is given as a parameter.
@@ -16,7 +27,16 @@
     Do not use any built in functionality for sorting, matching etc. (You may use Random and Math functions)
 */
 
-
+int[] returnUniqueNumbers(int n)
+{
+    int[] numbers = new int[n];
+    Random random = new Random();
+    for (int i = 0; i < n; i++)
+    {
+        numbers[i] = random.Next(1, 100);
+    }
+    return numbers;
+}
 
 /*  Task 3
     Create a function that given a string and a pattern returns true if the pattern matches the string.
@@ -36,11 +56,24 @@
 
 
 
-
 /*  Task 4
     Create a function that reads an indetermind number of integers from the console and returns the sum of the numbers.
 */
 
+int sumOfNumbers()
+{
+    int sum = 0;
+    while (true)
+    {
+        string input = Console.ReadLine();
+        if (input == "")
+        {
+            break;
+        }
+        sum += int.Parse(input);
+    }
+    return sum;
+}
 
 
 /*  Task 5
@@ -48,7 +81,19 @@
     Do not use any built in functionality for splitting strings etc.
 */
 
-
+int numberOfWords()
+{
+    int wordCount = 0;
+    string input = Console.ReadLine();
+    for (int i = 0; i < input.Length; i++)
+    {
+        if (input[i] == ' ')
+        {
+            wordCount++;
+        }
+    }
+    return wordCount + 1;
+}
 
 /*  Task 6
     Create the functions that given a color value in hex format reutns the RGB and CMYK values as *defined types*.
