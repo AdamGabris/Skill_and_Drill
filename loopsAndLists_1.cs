@@ -113,4 +113,4 @@ for (int i = 0; i < reference.Length; i++)
 
 Console.WriteLine(string.Join(", ", longestConsecutive));
 
-
+/* Did not know how to continue with this one. */

@@ -54,7 +54,7 @@ int[] returnUniqueNumbers(int n)
 
 */
 
-
+/* Could not complete this one on my own. */
 
 /*  Task 4
     Create a function that reads an indetermind number of integers from the console and returns the sum of the numbers.
@@ -116,6 +116,8 @@ int numberOfWords()
     - You can return multiple values from a function by using a tuple.
 
 */
+
+/* Could not complete this one on my own. */
 
 class RGB
 {
