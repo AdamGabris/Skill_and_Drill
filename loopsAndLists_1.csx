@@ -48,6 +48,7 @@ Console.WriteLine(combinedArray);
 
 
 
+
 /*  Task 3
     Using two nested (one inside the other) for loops and a aray of type char, create the following pattern as a string: 
     *******
