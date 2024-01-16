@@ -42,12 +42,6 @@ string[] lettersArray = new string[] { "a", "b", "c", "d", "e" };
 double[] numbersArray = new double[] { 1.1, 2.2, 3.3, 4.4, 5.5 };
 string[] combinedArray = new string[10];
 
-foreach (var letter in lettersArray.Split(","))
-{
-    combinedArray += letter;
-}
-
-foreach (var number in numbersArray)
 
 
 Console.WriteLine(combinedArray);
